@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <h1>JavaScript - ukázková stránka</h1>
+    <h2  id="kouzelnyText">Kouzelný text</h2>
+    <h2 id = "nadpis" onmouseover= "nadpis.style.color = randomColor(); this.style.backgroundColor = randomColor()" >Náhodná barva</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat nihil fugit aliquid sed sit vero sequi similique consectetur facere.</p>
+    <h2>Magický obrázek</h2>
+    <figure>
+        <img id="fotka" src="portret.jpg" alt="Portrét" width="200">
+        <figcaption>Zvětšující se fotka</figcaption>
+    </figure>
+    <h2>Superkalkulačka</h2>
+    <div>
+        <p>Zadej desítkové číslo: <input type="number" value="0" min = "0" max = "1000" id="dec"></p>
+        <p><button id="convert">Převeď</button></p>
+        <p id="result">Tady bude výsledek.</p>
+    </div>
+
+    <script src="./js/kouzla.js"></script>
+</body>
+</html>
