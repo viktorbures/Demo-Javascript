@@ -1,13 +1,18 @@
 // alert("Ahoj světe" + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!".repeat(5));
+
+// Deklarace konstant, ktere odkazuji na prvky webove stranky podle ID
 const fotka = document.getElementById("fotka");
 const kouzelnyText = document.getElementById("kouzelnyText");
-
 const dec = document.getElementById("dec");
 const convert = document.getElementById("convert");
 const result = document.getElementById("result");
 
-
+// Funkce pro vytvoreni nahodne barvy podle RGB
 function randomColor() {
+    /* r g b - promenne pro jednotlive barevne slozky
+    Math.round - vestavena funkce, ktera zaokrouhluje
+    Math.random - vestavena funkce, ktera vygeneruje cislo mezi 0-1
+    */
     let r = Math.round(Math.random() * 255);
     let g = Math.round(Math.random() * 255);
     let b = Math.round(Math.random() * 255);
